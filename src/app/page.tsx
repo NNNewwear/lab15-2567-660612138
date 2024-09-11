@@ -38,7 +38,7 @@ const schema = z
       errorMap: () => ({ message: "Please select a plan" }),
     }),
     gender: z.enum(["male", "female"], {
-      errorMap: (issue, ctx) => ({ message: "Please choose a gender" }),
+      errorMap: () => ({ message: "Please choose a gender" }),
     }),
     acceptTermsAndConds: z.literal(true, {
       // message: "You must accept terms and conditions",
